@@ -1,0 +1,794 @@
+body{
+    width:auto ;
+    background: #f2f2f2;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(imgs/homeimg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    
+}
+.navbar{
+   width: 1200px;
+   height: 75px; 
+   margin: auto;   
+   position: sticky;
+}
+.icon{
+    width: 300px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: rgb(189, 133, 78);
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    float: left;
+    
+
+    
+}
+.menu{
+    width: 400px;
+    float: inline-end;
+    height: 70px;
+}
+ul{
+    float: inline-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+ul li a:hover{
+    color:rgb(189, 133, 78);
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin:100px;
+    color: white;
+    position: relative;
+}
+.content .par{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.3px;
+    line-height: 30px;
+    color: rgb(199, 191, 191);
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(199, 191, 191);
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width:190px;
+    height: 40px;
+    background: rgb(189, 133, 78);
+    border: none;
+    margin-bottom: 10px;
+    margin-left:20px;
+    font-size: 12px;
+    font-weight:bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.cn:hover{
+    background-color: white
+    
+}
+.content span{
+    color: rgb(189, 133, 78);
+    font-size: 60px;
+}
+.Welcome{
+    width: 100%;
+    margin: 5px;
+    align-items: center;
+    padding: 50px;
+    padding-right: 80px;
+}
+h1{
+    font-size: 36px;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+p{
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 0cqmax;
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 70px;
+    line-height: 2.3cap;
+    align-items: center;
+}
+
+.parallax-1{
+    background:url(imgs/pexels-ave-calvar-martinez-8520728.jpg)no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    
+}
+.parallax-2{
+    background:url(imgs/pexels-wojciech-kumpicki-2071881.jpg)no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    
+}
+.parallax-inner{
+    padding:10% ;
+}
+
+.services{
+    color: rgb(189, 133, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding-right: 20px;
+    align-content: center;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container div{
+    width: 570px;
+    margin: 10px;
+}
+.container div h2{
+    padding-right: 20px;
+    text-align: left;
+    padding-top: 10px;
+}
+.container div p{
+    padding-top: 30px;
+    text-align: left;
+    width: 570px;
+
+}
+.new{
+    width: 100%;
+    margin: 5px;
+    align-items: center;
+    padding: 50px;
+    padding-right: 80px; 
+
+}
+.new H2{
+    padding-top: 10px;
+    color: rgb(189, 133, 78);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.serving{
+    color: rgb(189, 133, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 60px;
+}
+.slideb{
+    min-height: 100vh;
+    place-items: center;
+}
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track{
+    display: flex;
+    width: cal(250px*18);
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state:paused;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(calc(-250px*9));
+    }
+}
+
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+.slide-track img{
+    width: 100%;
+}
+img:hover{
+    transform: translateZ(20px);
+}
+
+/*---------ABOUT US---------*/
+.sub-main{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imgs/nowparallaxnw.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.H1{
+    margin-top: 150px;
+    color: rgb(0, 0, 0);
+    padding-right: 1090px;
+}
+.bold{
+    font-size:25px;
+    color:rgb(189, 133, 78);
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 80px;
+    display: flex;
+}
+.Logo{
+    color: rgb(189, 133, 78);
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0px;
+
+    float: left;
+    padding-top: 20px;
+}
+.Navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+   
+}
+.Menu{
+    width: 400px;
+    float: inline-end;
+    height: 70px;
+}
+.abtp{
+    color:gray;
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 0cqmax;
+    font-size:medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 50px;
+    line-height: 2.3cap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+    display: flex;
+
+}
+.Cn{
+    width: 260px;
+    height: 40px;
+    background: rgb(189, 133, 78);
+    border: none;
+    margin-left:20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight:bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: .2s ease;
+    margin: 80px;
+}
+.Cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+.Cn:hover{
+    background-color: white;
+}
+
+/*--------service contents--------*/
+
+.header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imgs/pexels-anastasiya-badun-.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.He1{
+    margin-top: 150px;
+    color:rgb(117, 112, 112);
+    padding-right: 1000px;
+}
+
+.Bold{
+    padding-top: 50px;
+    font-size:25px;
+    color:rgb(189, 133, 78);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    width: 700px;
+    display: flex;
+    padding-left: 50px;
+}
+.par{
+    color:gray;
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 0cqmax;
+    text-align:left;
+    margin:10px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 700px;   
+}
+.Ul{
+    color: gray;
+    list-style-type:none;
+    padding: 0;
+}
+.Ul li{
+background-color: #f2f2f2;
+padding: 5px;
+align-items: center;
+
+}
+.list Ul li{
+    list-style: none;
+    color: rgb(189, 133, 78);
+}
+.strt{
+    display: flex;
+}
+.wish{
+    flex: 1;
+}
+.list{
+    flex: 10px;
+    margin-left: 1px;
+    justify-content: flex-start;
+}
+.list ol{
+    list-style-type: none;
+    padding:0;
+    margin-right: 50px;
+    text-align: left;
+    
+}
+.list ol li{
+    margin-bottom: 5px;
+}
+
+.H2{
+    color: rgb(189, 133, 78);
+}
+/*-----dog daycare-----*/
+.sub-header{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(imgs/justin-veenema-NH1d0xX6Ldk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.Hd{
+    font-size: 36px;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(189, 133, 78);
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.Hd2{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(189, 133, 78);
+    padding-left: 50px;
+}
+.Par{
+    padding-left: 50px;
+}
+.bullet-points{
+    list-style-type: disc;
+    padding-left: 20px; color:gray;
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 0cqmax;
+    text-align:left;
+    margin:10px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 700px;   
+    line-height: 2.3cap;
+}
+.Mon{
+    padding-left: 20px; color:rgb(84, 82, 82);
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 0cqmax;
+    text-align:left;
+    margin:10px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 700px;   
+    line-height: 2.3cap;
+}
+.tim{
+    padding-left: 20px; color: gray;
+    font-size: 20px;
+    font-weight: 300;
+    word-spacing: 0cqmax;
+    text-align:left;
+    margin:10px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 700px;   
+    line-height: 2.3cap;
+}
+  
+/*-----dog boarding-----*/
+.Sub-header{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(imgs/backiee-135451now.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+/*----cat boarding----*/
+.Sub-Header{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(imgs/cb.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+/*------sub head----*/
+.Sub-head{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(imgs/pexels-bryce-carithers-9031786.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.Content{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(189, 133, 78);
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    padding-top: 400px;
+}
+.Content span{
+    color: rgb(189, 133, 78);
+    font-size: 60px;
+    
+}
+.para{
+    color:gray;
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 0cqmax;
+    text-align:left;
+    margin:10px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 700px;   
+}
+/*------self serve dog wash------*/
+.contents{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(imgs/ssd.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.Contents{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(189, 133, 78);
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    padding-top: 400px;
+}
+.Contents span{
+    color: rgb(189, 133, 78);
+    font-size: 60px;
+}
+.Bullet.points{
+    list-style-type: disc;
+    padding-left: 20px;
+    color:black;
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 0cqmax;
+    text-align:left;
+    margin:10px;
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 700px;   
+    line-height: 2.3cap;
+}
+/*-----dog grooming------*/
+.Sub-headerr{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(imgs/pexels-goochie-poochie-grooming-19145879.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.conttent{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(189, 133, 78);
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    padding-top: 400px;
+    padding-top: 230px;
+    padding-left: 100px;
+}
+.conttent span{
+    color: rgb(189, 133, 78);
+   font-size: 60px;
+}
+/*------registration------*/
+.suB-main{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imgs/pexels-blue-bird-7210674.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.Hh1{
+    color: rgb(189, 133, 78);
+    padding-top: 180px;
+    padding-right: 1000px;
+}
+/*----reserve now-----*/
+.wen{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(33, 32, 32);
+    letter-spacing: 1px;
+    grid-row-gap: 20px;
+    justify-content: space-between;
+
+
+}
+.frm{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.butn{
+    background-color: #2d0b00;
+    color: #fff;
+    font: 100;
+    font-weight: 600;
+    border-radius: 100px;
+    font-size: 18px;
+    padding: 10px;
+    
+}
+.butn:hover{
+    background-color: white;
+    color: black;
+}
+            
+
+.regis{
+    align-items: center;
+    color: rgb(189, 133, 78);
+}
+.tcs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.frm{
+    padding-right: 12px;
+    display: grid;
+}
+/*------contact us------*/
+.soon-main{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imgs/nsn.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.mail{
+    color: rgb(189, 133, 78);
+}
+.H212{
+    margin-top: 150px;
+    color:rgb(189, 133, 78);
+    padding-right: 1090px;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.footer-body{
+    background: #eef8ff;
+    
+}
+footer{
+    width: 100%;
+    position:absolute;
+    scroll-padding-bottom: 0;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: #fff;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 15px;
+    
+}
+.ROW{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.COL{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.fter{
+    width: 80px;
+    margin-bottom: 30px;
+    padding-top: 75px;
+}
+.COL h3{
+    width: fit-content;
+    margin: 40px;
+    position: relative;
+    padding-bottom: 1px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.email-id{
+    width: fit-content;
+    margin-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+    
+
+.seperate {
+    font-size: large;
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    display: inline-block;
+    
+   
+}
+
+/*------footer--------*/
+.footer-body{
+    background: #eef8ff;
+    
+}
+footer{
+    width: 100%;
+    position:absolute;
+    scroll-padding-bottom: 0;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: #fff;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 15px;
+    
+}
+.ROW{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.COL{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.fter{
+    width: 80px;
+    margin-bottom: 30px;
+    padding-top: 75px;
+}
+.COL h3{
+    width: fit-content;
+    margin: 40px;
+    position: relative;
+    padding-bottom: 1px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.email-id{
+    width: fit-content;
+    margin-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+    
+
+.seperate {
+    font-size: large;
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    display: inline-block;
+    
+   
+}
